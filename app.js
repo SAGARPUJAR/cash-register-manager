@@ -9,7 +9,10 @@ const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 buttonCheck.addEventListener("click", function validateBillAndCashAmount() {
   if (billAmount.value > 0) {
     msg.innerText = "";
-    if (cashGiven.value >= billAmount.value) {
+    const val1 = billAmount.Value;
+    const val2 = cashGiven;
+
+    if (val2 >= val1) {
       const amountToBeReturned = cashGiven.value - billAmount.value;
       calculateChage(amountToBeReturned);
     } else {
