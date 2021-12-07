@@ -1,9 +1,40 @@
-*{
-
+* {
+  position: inherit;
+  left: 50%;
+  right: inherit;
+  top: 50%;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.table-border {
+  border: 1px solid black;
+}
+
+.table-border th,
+tr,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+input {
+  border: 1px solid;
+  width: 25%;
+  height: 30px;
+  border-radius: 4px;
+}
+
+#btnCheck {
+  width: 25%;
+  background-color: cadetblue;
+  height: 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
 }
